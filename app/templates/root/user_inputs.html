@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Expenses</title>
+</head>
+<body>
+    <h1>All Expenses</h1>
+
+    {% for expense in expenses %}
+
+    <div>
+        <h2>Expense Title: {{ expense.title }}</h2>
+        <p>Amount: ${{ expense.amount }}</p>
+        <p>Date: {{ expense.date }}</p>
+    </div>
+
+    <hr>
+    {% endfor %}
+    
+
+</body>
+</html>
